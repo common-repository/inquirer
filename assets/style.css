@@ -1,0 +1,90 @@
+.inquirer_queries {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 275px);
+}
+
+.inquirer_query-image {
+	height: 50px;
+	display: grid;
+	place-items: center;
+}
+
+.inquirer_queries .inquirer_query {
+	background: white;
+	border-radius: 3px;
+	border: solid 1px lightgrey;
+	margin: 20px 20px 20px 0;
+	padding: 20px;
+	max-width: 275px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.inquirer_queries button.button,
+.inquirer_query-types button.button,
+button.button.inquirer_query-type-active,
+button.button.inquirer_query-type-inactive,
+input.button.button-primary {
+	margin: 5px;
+}
+
+button.button[name="update_url_for_query"] {
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.inquirer_query-types {
+	align-self: start;
+	flex-grow: 1;
+	padding-bottom: 20px;
+}
+
+button.button.inquirer_query-type-active,
+button.button.inquirer_query-type-active:hover {
+	color: white;
+	background-color: orange;
+	border-color: orange;
+}
+
+button.delete.button-secondary,
+button.delete.button-secondary:hover {
+	color: red;
+	border-color: red;
+}
+
+.inquirer_add-inquirer-form {
+	display: grid;
+	grid-template-columns: 125px 250px;
+	row-gap: 20px;
+	align-items: center;
+}
+
+.inquirer_add-inquirer-form .inquirer_select-query-types {
+	align-self: baseline;
+}
+.inquirer_checker-type {
+	display: grid;
+}
+
+.inquirer_select-query-types {
+	padding-top: 6px;
+}
+
+.inquirer_info-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	padding: 10px;
+	border-radius: 3px;
+	border: solid 1px lightgrey;
+}
+
+.inquirer_info:hover ~ .inquirer_info-content {
+	display: initial;
+}
+
+.inquirer_info {
+	cursor: pointer;
+	display: table;
+}
